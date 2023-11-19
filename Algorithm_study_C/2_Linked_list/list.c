@@ -1,3 +1,5 @@
+
+//이해.
 struct node {
 	char *data; /*데이터 필드 : 하나의 문자열 저장 */
 	struct node *next; /*링크 필드 : 다음 노드의 주소 저장 */
