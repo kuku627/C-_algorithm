@@ -8,16 +8,16 @@
 #define LIST_LEN	100
 typedef int LData;
 
-typedef struct __ArrayList
+typedef struct ArrayList
 {
 	LData arr[LIST_LEN];
 	int numOfData;
 	int curPosition;
-} ArrayList;
+} List;
 
 
 /*** ArrayList와 관련된 연산들 ****/
-typedef ArrayList List;
+
 
 void ListInit(List * plist);
 void LInsert(List * plist, LData data);

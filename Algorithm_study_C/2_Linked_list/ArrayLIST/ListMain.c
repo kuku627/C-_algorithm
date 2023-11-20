@@ -9,8 +9,10 @@ int main(void)
 	ListInit(&list);
 
 	/*** 5개의 데이터 저장 ***/
-	LInsert(&list, 11);  LInsert(&list, 11);
-	LInsert(&list, 22);  LInsert(&list, 22);
+	LInsert(&list, 11);  
+	LInsert(&list, 11);
+	LInsert(&list, 22);  
+	LInsert(&list, 22);
 	LInsert(&list, 33);
 
 	/*** 저장된 데이터의 전체 출력 ***/
@@ -19,7 +21,7 @@ int main(void)
 	if(LFirst(&list, &data))    // 첫 번째 데이터 조회
 	{
 		printf("%d ", data);
-		
+		//arr[0] 출력
 		while(LNext(&list, &data))    // 두 번째 이후의 데이터 조회
 			printf("%d ", data);
 	}
